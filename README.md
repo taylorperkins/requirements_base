@@ -6,10 +6,13 @@ A basic adm/ directory that will enable a group to be consistent with package de
 The way to do this is: `pip install virtualenv`
 See [virtualenv](https://virtualenv.pypa.io/en/stable/)
 
-2. Now that you have virtualenv installed, you want to initialize your environment. The command to do this is: 
+2. Copy over this adm directory into your project, then go to the root of your project.
+`cp -r adm/ ~/PATH_TO_YOUR_PROJECT`
+
+3. Now that you have virtualenv installed, you want to initialize your environment. The command to do this is: 
 `virtualenv venv`
 
-3. To activate your venv, type: 
+4. To activate your venv, type: 
 ```
 # for macos
 source venv/bin/activate
@@ -18,7 +21,7 @@ source venv/bin/activate
 source venv/Scripts/activate
 ```
 
-4. Now that you are in your environmengt, you will want to run the installs.
+5. Now that you are in your environmengt, you will want to run the installs.
 `adm/update_requirements.sh`
 This command will run whatever code is living inside of update_requirements.sh. In this case, we are just installing all of the libraries living within the pip_requirements.txt. You are able to add or subract different commands, add different files, etc, to your update file in order to make your environment exactly how you want it. 
 
