@@ -16,6 +16,6 @@ if [ -f ${PIP_FILE} ]; then
     # make sure pip is upgraded
     pip install --upgrade pip
     echo "Installing pip packages..."
-    # install recursively every package within your pip file
+    # install every package within your pip file
     pip install -r ${PIP_FILE}
 fi
